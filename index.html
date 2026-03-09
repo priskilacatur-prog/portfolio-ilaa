@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Web Developer</title>
+
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+</head>
+
+<body>
+
+
+   <header class="navbar">
+
+    <div class="logo">MyPortfolio</div>
+
+    <nav class="menu">
+        <a href="#">Home</a>
+        <a href="#skills">Skill</a>
+        <a href="#project">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <button id="darkMode" class="dark-btn">🌙</button>
+
+</header>
+
+
+
+    <section class="hero" data-aos="fade-up">
+
+        <img src="img/profil1.jpg" class="profil" alt="Foto Profil">
+
+        <h1>Halo, Saya Web Developer</h1>
+
+        <p>Membuat Website Modern menggunakan HTML, CSS, PHP & MySQL</p>
+
+        <div class="hero-btn">
+
+            <a href="#project" class="btn">Lihat Project</a>
+
+            <a href="cv.pdf" class="btn-cv" download>Download CV</a>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="skills" class="skills">
+
+        <h2 data-aos="fade-up">Skill Programming</h2>
+
+        <div class="skill-box">
+
+            <div class="skill" data-aos="fade-right">
+                <h3>HTML</h3>
+                <div class="bar"><span style="width:90%"></span></div>
+            </div>
+
+            <div class="skill" data-aos="fade-right">
+                <h3>CSS</h3>
+                <div class="bar"><span style="width:85%"></span></div>
+            </div>
+
+            <div class="skill" data-aos="fade-right">
+                <h3>JavaScript</h3>
+                <div class="bar"><span style="width:70%"></span></div>
+            </div>
+
+            <div class="skill" data-aos="fade-right">
+                <h3>PHP</h3>
+                <div class="bar"><span style="width:80%"></span></div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <section id="project" class="projects">
+
+        <h2 data-aos="fade-up">Project Saya</h2>
+
+        <div class="gallery">
+
+            <div class="card" data-aos="zoom-in" onclick="openPopup('img/project1.png')">
+                <img src="img/project1.png" alt="Website Wisata">
+                <h3>Website Wisata Malinau</h3>
+                <p>Website informasi wisata modern.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" onclick="openPopup('img/project2.png')">
+                <img src="img/project2.png" alt="Website Barang Antik">
+                <h3>Website Barang Antik</h3>
+                <p>Website CRUD PHP & MySQL.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" onclick="openPopup('img/project3.png')">
+                <img src="img/project3.png" alt="Website Portfolio">
+                <h3>Website Portfolio</h3>
+                <p>Website portfolio developer.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" onclick="openPopup('img/project4.png')">
+                <img src="img/project4.png" alt="Sistem Informasi Bidan">
+                <h3>Sistem Informasi Bidan Praktik Mandiri</h3>
+                <p>Website CRUD menggunakan PHP dan MySQL.</p>
+            </div>
+
+            <div class="card" data-aos="zoom-in" onclick="openPopup('img/project5.png')">
+                <img src="img/project5.png" alt="Sistem Sewa Kostum">
+                <h3>Sistem Informasi Sewa Kostum</h3>
+                <p>Website menggunakan Laravel, PHP dan MySQL.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    
+    <div id="popup" class="popup">
+
+        <span class="close" onclick="closePopup()">×</span>
+
+        <img id="popup-img" alt="Preview Project">
+
+    </div>
+
+
+    
+    <section id="contact" class="contact">
+
+        <h2>Hubungi Saya</h2>
+
+        <p>Jika ingin membuat website silakan hubungi saya</p>
+
+        <a href="https://wa.me/6282331189371" class="wa">
+            Chat via WhatsApp
+        </a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 Portfolio Web Developer</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
