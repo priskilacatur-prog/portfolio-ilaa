@@ -10,7 +10,7 @@ body {
 .navbar {
     position: fixed;
     top: 0;
-    width: 170%;
+    width: 150%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -268,4 +268,5 @@ footer {
 
 .dark .bar {
     background: #334155;
+
 }
